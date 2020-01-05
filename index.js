@@ -8,7 +8,7 @@ app.use(express.static(path.join(__dirname, 'client/build')));
 
 // Put all API endpoints under '/api'
 app.get('/api/passwords', (req, res) => {
-    res.send('Example return -> HI!');
+    res.send(['one','two','three','four','five']);
 });
 
 // The "catchall" handler: for any request that doesn't
